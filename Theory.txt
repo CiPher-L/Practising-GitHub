@@ -1,0 +1,42 @@
+Version control on GitHub refers to the practice of managing and tracking changes to code or 
+files over time using Git, a distributed version control system. GitHub provides a platform to 
+host repositories, collaborate with others, and maintain a history of changes. It allows 
+developers to:
+
+- Track changes to their codebase.
+- Collaborate with team members using branches and pull requests.
+- Revert to previous versions if needed.
+- Manage contributions from multiple developers.
+
+To get started with version control on GitHub:
+
+1. WORKING DIRECTORY
+    Initialize a Git repository locally using `git init`. 
+        - Use "ls -a" to look for hidden folder in terminal since git will be one of them.
+        - To check which files are in staging zone (working zone) : `git status`
+2. STAGING AREA
+    Add and commit changes using `git add` and `git commit`.
+        - Add savepoint with : `git commit -m "Message (in present tense)"
+        - To check the commits : `git log`
+        - To add multiple commits : `git commit .`.
+        - Compare changes in a specific file using `git diff filename`.
+        - Switch between branches or restore files using `git checkout branch_name` or 
+          `git checkout filename`.
+        - Remove files from the staging area without deleting them from the working directory 
+          using `git rm --cached -r .`.
+
+3. Push the repository to GitHub using `git push`.
+    - Link the local repository to a remote repository using `git remote add origin <repository_url>`.
+    - Push changes to the remote repository using `git push -u <local> <remote>`.
+
+4. Cloning a repository(Github to Local files)
+    - Clone an existing repository from GitHub using `git clone <repository_url>`.
+    - This creates a local copy of the repository on your machine.
+    - You can start working on the cloned repository immediately.
+
+5. Branching and Merging
+  - Create a new branch using `git branch <branch_name>`.
+  - Switch to the new branch using `git checkout <branch_name>` or `git switch <branch_name>`.
+  - Merge changes from one branch into another using `git merge <branch_name>`.
+  - Resolve merge conflicts manually if they arise, then commit the resolved changes.
+  - Delete a branch after merging using `git branch -d <branch_name>`.
