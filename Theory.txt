@@ -39,4 +39,5 @@ To get started with version control on GitHub:
   - Switch to the new branch using `git checkout <branch_name>` or `git switch <branch_name>`.
   - Merge changes from one branch into another using `git merge <branch_name>`.
   - Resolve merge conflicts manually if they arise, then commit the resolved changes.
+  - To create a new branch AND check it out at the same time, you can simply type git checkout -b [yourbranchname]
   - Delete a branch after merging using `git branch -d <branch_name>`.
