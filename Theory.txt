@@ -35,9 +35,25 @@ To get started with version control on GitHub:
     - You can start working on the cloned repository immediately.
 
 5. Branching and Merging
-  - Create a new branch using `git branch <branch_name>`.
-  - Switch to the new branch using `git checkout <branch_name>` or `git switch <branch_name>`.
-  - Merge changes from one branch into another using `git merge <branch_name>`.
-  - Resolve merge conflicts manually if they arise, then commit the resolved changes.
-  - To create a new branch AND check it out at the same time, you can simply type git checkout -b [yourbranchname]
-  - Delete a branch after merging using `git branch -d <branch_name>`.
+    - Create a new branch using `git branch <branch_name>`.
+    - Switch to the new branch using `git checkout <branch_name>` or `git switch <branch_name>`.
+    - Merge changes from one branch into another using `git merge <branch_name>`.
+    - Resolve merge conflicts manually if they arise, then commit the resolved changes.
+    - To create a new branch AND check it out at the same time, you can simply type git checkout -b [yourbranchname]
+    - Delete a branch after merging using `git branch -d <branch_name>`.
+  
+6. Rebasing
+    - Rebase your branch onto another branch using `git rebase <branch_name>`.
+    - This moves the entire branch to begin on the tip of the specified branch, effectively replaying your changes on top of it.
+    - Use `git rebase --interactive` to clean up commits, squash them, or reorder them.
+    - Be cautious when rebasing shared branches, as it rewrites commit history.
+    - To abort a rebase in progress, use `git rebase --abort`.
+    - To continue a rebase after resolving conflicts, use `git rebase --continue`.
+
+Forking and Pull Requests
+    - Fork a repository to create your own copy of it on your GitHub account.
+    - Make changes to the forked repository locally or directly on GitHub.
+    - Push your changes to your forked repository.
+    - Create a pull request to propose your changes to the original repository.
+    - Collaborate with the repository maintainers to review and discuss your changes.
+    - Once approved, the changes can be merged into the original repository.
